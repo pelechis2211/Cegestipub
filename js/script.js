@@ -46,9 +46,9 @@ function toggleAccordion(element) {
 
 /*Programa de Estudios*/
 var swiper = new Swiper(".slide-container", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 20,
-    slidesPerGroup: 3,
+    slidesPerGroup: 1,
     loop: true,
     centerSlider: true,
     fade: true,
