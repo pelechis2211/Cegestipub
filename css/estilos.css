@@ -775,8 +775,17 @@ footer .wave#wave4 {
 }
 
 @media screen and (max-width: 480px) {
+    /*Menú*/
     .header__container {
-        width: 50%;
+        width: 40%;
+    }
+
+    .logo img {
+        width: 130px;
+    }
+
+    .btn__quote {
+        padding: 8px 20px;
     }
 
     .text__cover h1 {
