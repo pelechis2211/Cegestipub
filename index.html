@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link para los iconos del pie de página-->
+    <script src="https://kit.fontawesome.com/2cc74abacb.js" crossorigin="anonymous"></script>
+    <title>CEGESTIPUB</title>
+    <!--Link css-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--Link deslizador - Programa de Estudios-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!--<link rel="stylesheet" href="css/reiniciar.css">-->
+</head>
+<body>
+
+    <!--Header - Menu-->
+
+    <header id="header">
+        <div class="container__header">
+            <div class="logo">
+                <a href="index.html"><img src="imagenes/Logo/Logo letras con color.png" alt="Logo de la empresa"></a>
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="#">Contactos</a></li>
+                    </ul>
+                </nav>
+
+                <a href="#" class="btn__quote">Informes</a>
+
+                <!-- Botón hamburguesa -->
+                 
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!--INICIO-->
+        <!--Portada de inicio-->
+
+        <div class="container__cover div__offset">
+            <div class="cover">
+                <section class="text__cover">
+                    <h1>Trabaja de manera inteligente y accede a infinitas posibilidades</h1>
+                    <p> <STRong>CEGESTIPUB</STRong>, nos caracterizamos por nuestro firme compromiso con impulsar el éxito profesional de nuestros estudiantes. Disponemos de programas académicos en diversas disciplinas como <strong>Gestión Pública, Contrataciones del Estado, Administración y Gestión Municipal, Recursos Humanos, Dirección,</strong> diseñados para formar profesionales altamente capacitados y listos para sobresalir en sus respectivas áreas.</p>
+
+                    <a href="#" class="btn__text-cover btn__text">Empezar</a>
+                </section>
+                <section class="image__cover">
+                    <img src="imagenes/Portada/Imagen portada 5.png" alt="">
+                </section>
+            </div>
+        </div>
+
+        <!--Nuestra misión y visión-->
+
+        <div class="container_mvo">
+            <div class="tilulo__mvo text__card-primary">
+                <h1>CEGESTIPUB</h1>
+                <p>Corporación de Estudios en Gestión Pública Limitada</p>
+            </div>
+    
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion(this)">Misión <span class="arrow">⬆</span></button>
+                    <div class="accordion-content" style="display: none;">
+                        <p>Nuestra misión es fortalecer las habilidades y competencias profesionales de nuestros estudiantes a través de una educación de excelencia y un enfoque práctico. Nuestro compromiso es proporcionarles las herramientas y el conocimiento que necesitan para no solo alcanzar, sino superar sus objetivos profesionales.</p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion(this)">Visión <span class="arrow">⬇</span></button>
+                    <div class="accordion-content" style="display: none;">
+                        <p>Nuestra visión es ser la institución educativa más reconocida por su excelencia en la formación profesional y el desarrollo integral de los estudiantes. Aspiramos a liderar en innovación educativa, adaptándonos constantemente a las demandas del mercado laboral y ofreciendo programas de calidad que impulsen el éxito de nuestros alumnos.</p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion(this)">Objetivo <span class="arrow">⬇</span></button>
+                    <div class="accordion-content" style="display: none;">
+                        <p>Convertirnos en la institución de referencia en educación superior, especializada en la impartición de cursos, comprometida a ofrecer a nuestros estudiantes las mejores oportunidades para alcanzar el éxito en sus trayectorias profesionales.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="image-container">
+                <img src="imagenes/Msión y Visión/ceo-24-10f9b.png" alt="Persona" class="person-image">
+            </div>
+        </div>
+
+        <!--Programa de Estudios-->
+        
+        <section class="programa-estudios">
+            
+            <div class="text__pragrama-estudios text__card-primary">
+                <p>PROGRAMAS DE ESTUDIO</p>
+                <h1>Nuestros Cursos</h1>
+            </div>
+            
+            <div class="swiper container_curso">
+                <div class="slide-container">
+                    <div class="swiper-wrapper card-wrapper">
+
+                        <div class="swiper-slide card">
+                            <div class="imagen-box">
+                                <img src="imagenes/Cursos/Gestión Publica.jpg" alt="">
+                            </div>
+                            <div class="profile-details">
+                                <img src="imagenes/Iconos/01 iconos diploma-de-graduacion.png" alt="">
+                                <div class="texto-curso">
+                                    <h5 class="Curso">Curso</h5>
+                                    <h4 class="nombre-curso">Gestión Pública</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="imagen-box">
+                                <img src="imagenes/Cursos/SIAF.jpg" alt="">
+                            </div>
+                            <div class="profile-details">
+                                <img src="imagenes/Iconos/02 iconos diploma-de-graduacion.png" alt="">
+                                <div class="texto-curso">
+                                    <h5 class="Curso">Curso</h5>
+                                    <h4 class="nombre-curso">SIAF - Sistemas Integrados de Administración Financiera</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="imagen-box">
+                                <img src="imagenes/Cursos/Actualización gestión publica.jpg" alt="">
+                            </div>
+                            <div class="profile-details">
+                                <img src="imagenes/Iconos/01 iconos diploma-de-graduacion.png" alt="">
+                                <div class="texto-curso">
+                                    <h5 class="Curso">Curso</h5>
+                                    <h4 class="nombre-curso">SEACE - Sistema Electrónico de Contrataciones del Estado</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="imagen-box">
+                                <img src="imagenes/Cursos/Contrataciones del estado.jpg" alt="">
+                            </div>
+                            <div class="profile-details">
+                                <img src="imagenes/Iconos/02 iconos diploma-de-graduacion.png" alt="">
+                                <div class="texto-curso">
+                                    <h5 class="Curso">Curso</h5>
+                                    <h4 class="nombre-curso">SIGA - Sistema Integrado de Gestión Administrativa</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="imagen-box">
+                                <img src="imagenes/Cursos/Administración.jpg" alt="">
+                            </div>
+                            <div class="profile-details">
+                                <img src="imagenes/Iconos/01 iconos diploma-de-graduacion.png" alt="">
+                                <div class="texto-curso">
+                                    <h5 class="Curso">Curso</h5>
+                                    <h4 class="nombre-curso">Contrataciones del Estado</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="imagen-box">
+                                <img src="imagenes/Cursos/Gestión Municipal.jpg" alt="">
+                            </div>
+                            <div class="profile-details">
+                                <img src="imagenes/Iconos/02 iconos diploma-de-graduacion.png" alt="">
+                                <div class="texto-curso">
+                                    <h5 class="Curso">Curso</h5>
+                                    <h4 class="nombre-curso">Administración Pública</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="imagen-box">
+                                <img src="imagenes/Cursos/SSOMA.jpg" alt="">
+                            </div>
+                            <div class="profile-details">
+                                <img src="imagenes/Iconos/01 iconos diploma-de-graduacion.png" alt="">
+                                <div class="texto-curso">
+                                    <h5 class="Curso">Curso</h5>
+                                    <h4 class="nombre-curso">SSOMA Seguridad Salud Ocupacional y Medio Ambiente</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="imagen-box">
+                                <img src="imagenes/Cursos/Políticas Públicas y Gestión Estatal.jpg" alt="">
+                            </div>
+                            <div class="profile-details">
+                                <img src="imagenes/Iconos/02 iconos diploma-de-graduacion.png" alt="">
+                                <div class="texto-curso">
+                                    <h5 class="Curso">Curso</h5>
+                                    <h4 class="nombre-curso">Políticas Públicas y Gestión Estatal</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Script.js-->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <a href="#" class="btn__text-cursos btn__text">Inscripción</a>
+        </section>
+
+        <!--Generador de confianza-->
+        
+        <div class="container__trust container__card-primary">
+            <div class="trust card__primary">
+                <div class="text__trust text__card-primary">
+                    <p>GENERANDO CONFIANZA</p>
+                    <h1>Dispuestos Ayudarte</h1>
+                </div>
+                <div class="container__trust container__box-cardPrimary">
+                    <div class="card_trust box__card-Primary">
+                        <img src="./Imagenes/Confianza/Ambiente.png" alt="">
+                        <h2>Creamos un ambiente acogedor de aprendizaje</h2>
+                        <p>Creando un clima propicio para atender al estudiante que aprende en los espacios fisicos o virtuales y las condiciones que estimulan el aprendizaje del estudiante.</p>
+                    </div>
+                    <div class="card_trust box__card-Primary">
+                        <img src="./Imagenes/Confianza/Colectivo.png" alt="">
+                        <h2>Promovemos el aprendizaje activo y colaborativo</h2>
+                        <p>Los estudiantes desarrollen nuevas ideas y conocimientos mediante la construcción colectiva del conocimiento común y asi propicia el desarrollo de competencias personales, interpersonales y sociales.</p>
+                    </div>
+                    <div class="card_trust box__card-Primary">
+                        <img src="./Imagenes/Confianza/Evaluamos.png" alt="">
+                        <h2>Evaluamos el aprendizaje</h2>
+                        <p>Son los procedimientos que utiliza el docente para recoger información de forma sistemática sobre el aprendizaje de los estudiantes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sobre nosotros nuestro equipo-->
+
+        <div class="container__about div__offset">
+            <div class="about card__primary">
+                <div class="text__about text__card-primary">
+                    <p>NUESTROS ASESORES</p>
+                    <h1>Comunícate con nosotros</h1>
+                </div>
+                <div class="container__box-abaut">
+                    <div class="box__abaut">
+                        <img src="./Imagenes/Nuestro equipo/atencion-al-cliente G.png" class="abaut__img-atencion" alt="">
+                        <h1>Glenda Chalco T</h1>
+                        <p>Asesora</p>
+                        <a href="https://wa.me/51946339339" ><img src="./Imagenes/Nuestro equipo/whatsapp.png" class="abaut__img-whatsapp" alt=""></a>
+                    </div>
+                    <div class="box__abaut">
+                        <img src="./Imagenes/Nuestro equipo/atencion-al-cliente P.png" class="abaut__img-atencion" alt="">
+                        <h1>Pablo Luna C</h1>
+                        <p>Asesor</p>
+                        <a href="https://wa.me/51983530898" ><img src="./Imagenes/Nuestro equipo/whatsapp.png" class="abaut__img-whatsapp" alt=""></a>
+                    </div>
+                </div>
+                <a href="" class="btn__text-abaut btn__text">Saber Más</a>
+            </div>  
+        </div>
+        
+        <!--Pie de página-->
+
+        <footer>
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <div class="logo_footer">
+                <a href=""><img src="imagenes/Logo/Logo blanco.png" alt=""></a>
+            </div>
+            <ul class="social_icon-footer">
+                <li><a href=""><i class="fa-brands fa-square-facebook"></i></i></a></li>
+                <li><a href=""><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-square-instagram"></i></i></a></li>
+                <li><a href=""><i class="fa-brands fa-square-whatsapp"></i></a></li>
+            </ul>
+            <ul class="menu_footer">
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="">Cursos</a></li>
+                <li><a href="">Contactos</a></li>
+            </ul>
+            <p>&copy Copyright Cegestipub - 2023</p>
+        </footer> 
+
+    </main>
+
+    <!--Script swiper js - Programa de Estudios-->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!--Script js-->
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
