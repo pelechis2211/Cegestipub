@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Montserrat:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --color_text-primary: #00adff;
+    --color_text-secundary: #3586ff;
+    --color_text-tertiary: #00adff;
+    --color_text-quaternary: #8db8fb;
+    --main_color-primary: #f7fcf9;
+    --main_color-secundary: #F0FBFF;
+    --background-color: #4134c3;
+    --lowText_font_size: 25px;
+    --text_size_title: 40px;
+    --text_title_card: 24px;
+    --text_title_cardv2: 20px;
+    --text_paragraph: 16px;
+    --box_shadow-primary: 0px 6px 50px -20px rgba(0,0,0,0.2);
+}
+/*Portada de inicio*/
+
+.text__cover h1{
+    font-size: 35px;
+    color: var(--color_text-secundary);
+}
+
+/*Card Gerente*/
+/* Agrega la perspectiva para permitir la rotación en 3D */
+.card_gerente {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+    background: var(--main_color-secundary);
+    padding: 20px;
+    perspective: 1000px; /* Añadido: permite el efecto 3D */
+}
+
+.text_gerente  {
+    width: 50%;
+    font-size: 35px;
+    margin-bottom: 20px;
+    padding: 40px;
+    text-align: center;
+    font-size: var(--text_paragraph);
+    margin-top: 40px;
+    color: var(--color_text-tertiary);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    height: 500px;
+    width: 320px;
+    position: relative;
+    margin-top: 50px;
+    transform-style: preserve-3d; /* Añadido: habilita el espacio 3D */
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1); /* Añadido: transición suave para la rotación */
+}
+
+/* Las dos caras de la tarjeta */
+.wrapper .front-face, 
+.wrapper .back-face {
+    height: 485px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden; /* Oculta la cara trasera al rotar */
+    border-radius: 10px;
+}
+
+/* Cara frontal (antes del hover) */
+.wrapper .front-face {
+    transform: rotateY(0deg); /* Inicialmente sin rotar */
+}
+
+/* Cara trasera (antes del hover) */
+.wrapper .back-face {
+    transform: rotateY(180deg); /* Inicialmente rotada */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Rotación al hacer hover en el contenedor */
+.wrapper:hover .front-face {
+    transform: rotateY(-180deg); /* Rota la cara frontal al hacer hover */
+}
+
+.wrapper:hover .back-face {
+    transform: rotateY(0deg); /* Rota la cara trasera al frente */
+}
+
+/* Imagen dentro de las tarjetas */
+.wrapper .card img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* Imagen de la cara trasera (redondeada) */
+.wrapper .back-face img {
+    height: 150px;
+    width: auto;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(375deg, #00adff, #3586ff);
+}
+
+/* Información en la parte trasera */
+.wrapper .back-face .info {
+    text-align: center;
+}
+
+.back-face .info .title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Iconos sociales */
+.back-face ul {
+    display: flex;
+}
+
+.back-face ul a {
+    display: block;
+    height: 40px;
+    width: 40px;
+    background: linear-gradient(375deg, #00adff, #3586ff);
+    text-align: center;
+    border: 2px solid transparent;
+    line-height: 38px;
+    margin: 0 5px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.back-face ul a:hover {
+    background: none;
+    color: #00adff;
+    border-color: #3586ff;
+}
+
+@media screen and (max-width: 720px) {
+    .content {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .text_gerente {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+
