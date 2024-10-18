@@ -365,7 +365,7 @@ header{
     margin: 50px 50px;  /*743672011*/
     overflow: hidden;
 }
-.card{
+.card {
     background: #fff;
     border-radius: 8px;
     border: 1px solid #e6e6e6;
@@ -373,7 +373,7 @@ header{
 }
 
 .card:hover{
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     box-shadow: var(--box_shadow-primary);
 }
 
@@ -392,6 +392,7 @@ header{
     column-gap: 12px;
     align-self: center;
     display: flex;
+    width: auto;
 }
 
 .card .profile-details img{
@@ -405,7 +406,7 @@ header{
 }
 
 .profile-details .Curso{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     color: #4d4d4d;
 }
@@ -795,6 +796,19 @@ footer .wave#wave4 {
         width: 340px;
         height: auto;
         padding-top: 30px;
+    }
+
+     /*Nuestro Curos*/
+    .card .imagen-box {
+        height: 360px;
+    }
+
+    .profile-details .Curso{
+        font-size: 16px;
+    }
+    
+    .profile-details .nombre-curso{
+        font-size: 18px;
     }
 
     /*Nuestra misión y visión*/
