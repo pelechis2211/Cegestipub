@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link card gerente-->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!--link para los iconos del pie de página-->
+    <script src="https://kit.fontawesome.com/2cc74abacb.js" crossorigin="anonymous"></script>
+    <title>NOSOTROS</title>
+    <!--Link css-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/nosotros.css">
+    <!--Link deslizador - Programa de Estudios-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!--<link rel="stylesheet" href="css/reiniciar.css">-->
+</head>
+<body>
+
+    <!--Header - Menu-->
+
+    <header id="header">
+        <div class="container__header">
+            <div class="logo">
+                <a href="index.html"><img src="imagenes/imaganes inicio/Logo/Logo letras con color.png" alt="Logo de la empresa"></a>
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="#">Contactos</a></li>
+                    </ul>
+                </nav>
+
+                <a href="#" class="btn__quote">Informes</a>
+
+                <!-- Botón hamburguesa -->
+                 
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!--INICIO-->
+        <!--Portada de inicio-->
+
+        <div class="container__cover div__offset">
+            <div class="cover">
+                <section class="text__cover">
+                    <h1>Impulsa tu éxito profesional con <strong>CEGESTIPUB</strong> donde cada paso te acerca a la excelencia y nuevas oportunidades</h1>
+                </section>
+                <section class="image__cover">
+                    <img src="imagenes/imagenes nosotros/portada/portada nosotros.png" alt="">
+                </section>
+            </div>
+        </div>
+
+        <!--Card Gerente-->
+
+        <section class="card_gerente">
+            <div class="content">
+                <div class="wrapper">
+                    <div class="card front-face">
+                        <img src="./imagenes/imagenes nosotros/imagen Gerente/Gerenta 3.png" alt="">
+                    </div>
+                    <div class="card back-face">
+                        <img src="./imagenes/imagenes nosotros/imagen Gerente/Gerenta 3.png" alt="">
+                        <div class="info">
+                            <div class="title">Hanny Glenda Chalco Turpo</div>
+                            <p>GERENTE GENERAL</p>
+                        </div>
+                        <ul><a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text__cover text_gerente">
+                    <div class="text__about text__card-primary">
+                        <p>NUESTRA</p>
+                        <h1>Gerenta</h1>
+                    </div>
+                    <p>En <strong>CEGESTIPUB, <em>nuestro compromiso con tu desarrollo y éxito profesional es nuestra prioridad</em></strong>. Como referentes en educación continua, ofrecemos una propuesta educativa innovadora, flexible y de alta calidad, cuidadosamente diseñada para ajustarse a tus necesidades, metas y aspiraciones. Con nosotros, no solo obtienes conocimientos, sino que construye un futuro sólido y lleno de posibilidades. ¡Elige avanzar con CEGESTIPUB!</p>
+                </div>
+            </div>
+            
+        </section>
+        
+
+        <!--Nuestra misión y visión-->
+
+        <div class="container_mvo">
+            <div class="tilulo__mvo text__card-primary">
+                <h1>CEGESTIPUB</h1>
+                <p>Corporación de Estudios en Gestión Pública Limitada</p>
+            </div>
+    
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion(this)">Misión <span class="arrow">⬆</span></button>
+                    <div class="accordion-content" style="display: none;">
+                        <p>Nuestra misión es fortalecer las habilidades y competencias profesionales de nuestros estudiantes a través de una educación de excelencia y un enfoque práctico. Nuestro compromiso es proporcionarles las herramientas y el conocimiento que necesitan para no solo alcanzar, sino superar sus objetivos profesionales.</p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion(this)">Visión <span class="arrow">⬇</span></button>
+                    <div class="accordion-content" style="display: none;">
+                        <p>Nuestra visión es ser la institución educativa más reconocida por su excelencia en la formación profesional y el desarrollo integral de los estudiantes. Aspiramos a liderar en innovación educativa, adaptándonos constantemente a las demandas del mercado laboral y ofreciendo programas de calidad que impulsen el éxito de nuestros alumnos.</p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion(this)">Objetivo <span class="arrow">⬇</span></button>
+                    <div class="accordion-content" style="display: none;">
+                        <p>Convertirnos en la institución de referencia en educación superior, especializada en la impartición de cursos, comprometida a ofrecer a nuestros estudiantes las mejores oportunidades para alcanzar el éxito en sus trayectorias profesionales.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="image-container">
+                <img src="imagenes/imaganes inicio/Msión y Visión/Misión 1.png" alt="Persona" class="person-image">
+            </div>
+        </div>
+
+        <!-- Sobre nosotros nuestro equipo-->
+
+        <div class="container__about div__offset">
+            <div class="about card__primary">
+                <div class="text__about text__card-primary">
+                    <p>NUESTROS ASESORES</p>
+                    <h1>Comunícate con nosotros</h1>
+                </div>
+                <div class="container__box-abaut">
+                    <div class="box__abaut">
+                        <img src="./imagenes/imaganes inicio/Nuestro equipo/mujer.png" class="abaut__img-atencion" alt="">
+                        <h1>Glenda Chalco T</h1>
+                        <p>Asesora</p>
+                        <a href="https://wa.me/51946339339" ><img src="./imagenes/imaganes inicio/Nuestro equipo/whatsapp.png" class="abaut__img-whatsapp" alt="imagen whatsapp"></a>
+                    </div>
+                    <div class="box__abaut">
+                        <img src="./imagenes/imaganes inicio/Nuestro equipo/hombre.png" class="abaut__img-atencion" alt="">
+                        <h1>Pablo Luna C</h1>
+                        <p>Asesor</p>
+                        <a href="https://wa.me/51983530898" ><img src="./imagenes/imaganes inicio/Nuestro equipo/whatsapp.png" class="abaut__img-whatsapp" alt="imagen whatsapp"></a>
+                    </div>
+                </div>
+                <a href="" class="btn__text-abaut btn__text">Saber Más</a>
+            </div>  
+        </div>
+        
+        <!--Pie de página-->
+
+        <footer>
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <div class="logo_footer">
+                <a href=""><img src="imagenes/imaganes inicio/Logo/Logo blanco.png" alt=""></a>
+            </div>
+            <ul class="social_icon-footer">
+                <li><a href=""><i class="fa-brands fa-square-facebook"></i></i></a></li>
+                <li><a href=""><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-square-instagram"></i></i></a></li>
+                <li><a href=""><i class="fa-brands fa-square-whatsapp"></i></a></li>
+            </ul>
+            <ul class="menu_footer">
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="">Cursos</a></li>
+                <li><a href="">Contactos</a></li>
+            </ul>
+            <p>&copy Copyright Cegestipub - 2023</p>
+        </footer> 
+
+    </main>
+
+    <!--Script swiper js - Programa de Estudios-->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!--Script js-->
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
