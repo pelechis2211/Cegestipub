@@ -402,7 +402,7 @@ header{
 
 .profile-details{
     width: 240px;
-    height: 140px;
+    height: 150px;
 }
 
 .profile-details .Curso{
@@ -804,7 +804,7 @@ footer .wave#wave4 {
     }
 
     .profile-details .Curso{
-        font-size: 16px;
+        font-size: 14px;
     }
     
     .profile-details .nombre-curso{
