@@ -1,18 +1,15 @@
 /*Header - Menu*/
 
 window.onscroll = function() {
-
-    scroll = document.documentElement.scrollTop;
-
-    header = document.getElementById("header");
-
-    if(scroll > 20){
+    var scroll = document.documentElement.scrollTop;
+    var header = document.getElementById("header");
+    if (scroll > 20) {
         header.classList.add('nav_mod');
-        header.style.backgroundColor = 'rgb(250, 253, 245, 0.75)';
-    }else if(scroll < 20){
+        header.style.backgroundColor = 'rgba(250, 253, 245, 0.40)';
+    } else {
         header.classList.remove('nav_mod');
         header.style.backgroundColor = 'transparent';
-    } 
+    }
 }
 
 /*Menu hamburger*/
