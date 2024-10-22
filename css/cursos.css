@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Montserrat:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --color_text-primary: #00adff;
+    --color_text-secundary: #3586ff;
+    --color_text-tertiary: #00adff;
+    --color_text-quaternary: #8db8fb;
+    --main_color-primary: #f7fcf9;
+    --main_color-secundary: #F0FBFF;
+    --background-color: #4134c3;
+    --lowText_font_size: 25px;
+    --text_size_title: 40px;
+    --text_title_card: 24px;
+    --text_title_cardv2: 20px;
+    --text_paragraph: 16px;
+    --box_shadow-primary: 0px 6px 50px -20px rgba(0,0,0,0.2);
+}
+
+/*cursos*/
+
+.container__nuestros-cursos {
+    background: var(--main_color-secundary);
+    padding: 50px 20px;
+}
+
+.container__cursos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 0 70px 0;
+}
+
+.card_cursos {
+    max-width: 350px;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px;
+    margin: 14px;
+    transition: all 300ms;
+}
+
+.card_cursos:hover {
+    border: 1px solid transparent;
+    box-shadow: var(--box_shadow-primary);
+}
+
+.card_cursos .image_cursos {
+    height: 350px;
+}
+
+.image_cursos img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.text__cursos h3 {
+    font-size: 17px;
+    color: #4d4d4d;
+    padding: 10px 25px 0 25px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.text__cursos h2 {
+    font-size: 19px;
+    padding: 10px 15px 0 15px;
+    font-weight: 500;
+}
+
+.text__cursos p{
+    padding: 10px 15px 0 15px;
+    font-size: 15px;
+}
+
+.btn__cursos a {
+    color:#e6e6e6;
+}
+
+.btn__cursos a:hover {
+    color: var(--background-color);
+}
+
+.btn__cursos {
+    display: inline;
+    width: 150px;
+    margin: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 500;
+    background: var(--background-color);
+    border-radius: 5px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.btn__cursos:hover {
+    background: transparent;
+    border: 2px solid var(--background-color);
+    transform: scale(1.2);
+}
+
+
