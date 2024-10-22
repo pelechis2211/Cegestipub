@@ -188,8 +188,8 @@ header{
 /*portada de inicio*/
 
 .container__cover{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 80px;
+    padding-bottom: 50px;
     background: var(--main_color-primary);
 }
 
